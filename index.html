@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karabo's Contact Form</title>
+    <link rel="stylesheet" href="./nue.css" />
+  </head>
+  <body>
+    <form
+      id="contact-form"
+      action="https://formspree.io/f/mpzkwozk"
+      method="POST"
+    >
+      <h1 class="heading">Contact Form</h1>
+
+      <div class="form-group">
+        <label class="form-label" for="name">Your name:</label>
+        <input
+          class="form-input"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Full Name"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="email"> Your email: </label>
+        <input
+          class="form-input"
+          type="email"
+          name="_replyto"
+          id="email"
+          required
+          placeholder="example@email.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="contact">Your contact number:</label>
+        <input
+          class="form-input"
+          type="tel"
+          name="contact"
+          id="contact"
+          required
+          placeholder="072 123 4567"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="message"> Your message: </label>
+        <textarea
+          class="form-input"
+          name="message"
+          id="message"
+          placeholder="Type your message here"
+          required
+        ></textarea>
+      </div>
+
+      <button class="button" type="submit">Send</button>
+    </form>
+  </body>
+</html>
